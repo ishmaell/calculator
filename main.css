@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Orbitron:400,500');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+}
+
+body {
+    background: #f9f9f9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.page-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 100px 20px
+}
+.calculator-container {
+    background: #19293c;
+    box-shadow: 0 10px 20px #000;
+    max-width: 340px;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+.calculator {
+    height: 100%;
+    width: 100%;
+    background: #19293c;
+    border-radius: 12px;
+    box-shadow: 0 12px #0d1825;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(40px, auto);
+    grid-gap: 20px;
+    padding: 40px;
+}
+.calculator div {
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    box-shadow: inset 0 -7px 2px 0 rgba(0,0,0,0.15);
+}
+
+.calculator div:hover {
+    opacity: .9;
+}
+
+.calculator .screen {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    grid-column: 1/5;
+    min-height: 70px;
+    text-align: right;
+    font-size: 2em;
+    background: #afc1af;
+    box-shadow: inset 0px -10px 10px 0px rgba(0,0,0,0.2);
+    color: #000;
+    border: none;
+    cursor: default;
+    word-break: break-all;
+}
+.calculator .screen:hover {
+    opacity: 1;;
+}
+
+.calculator .number, .calculator .dot {
+    background: #9c9e9c;   
+}
+
+.calculator div:hover {
+    opacity: .9;
+}
+
+.calculator .operator {
+    background: #3b3f3f;
+}
+
+.calculator .equals {
+    background:#333a3a;
+    grid-row: 3/7;
+    grid-column: 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100%, auto);
+}
+.calculator .equals span {
+    align-self: center;
+    font-size: 1.8em;
+}
+.calculator .plus {
+    
+}
+
+.calculator .times {
+    font-size: 15px;
+}
+
+.calculator .dot {
+
+}
+
+.calculator .clear {
+    background: #f44336;
+}
